@@ -9,7 +9,7 @@ const Main = () => {
   const accesstoken = localStorage.getItem("token");
 
   useEffect(() => {
-    fetch("http://localhost:5000/product/")
+    fetch("https://e-commerce-api-ealr.onrender.com/product/")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
